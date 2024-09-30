@@ -1,7 +1,3 @@
-Berikut adalah kata-kata untuk README di GitHub:
-
----
-
 # Sampahku
 
 **Sampahku** adalah website yang dikembangkan sebagai tugas kelompok di kelas 2 SMK. Proyek ini bertujuan untuk mempermudah pengelolaan layanan antar jemput sampah dengan pembagian peran yang jelas di antara anggota kelompok.
