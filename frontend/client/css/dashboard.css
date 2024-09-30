@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5fccd;
+}
+.navbar {
+  background: #12486b;
+  height: 300px;
+  margin-bottom: -150px;
+  border-radius: 0 0 40px 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.text-left {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.text-left a i,
+.text-right a i {
+  color: #ececec;
+  font-size: 40px;
+}
+.text-left a img {
+  width: 100px;
+  margin-top: -30px;
+}
+.text-left a h2,
+.text-right a h2 {
+  font-size: 25px;
+  color: #ececec;
+}
+.text-right {
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.profil {
+  width: 100%;
+}
+.profil i {
+  color: #ececec;
+}
+.bg-1 {
+  height: 250px;
+  margin: auto;
+  width: 50%;
+  background: #419197;
+  border-radius: 30px;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.bg-1 i {
+  font-size: 80px;
+  margin-left: 40px;
+}
+.bg-2 {
+  height: 150px;
+  width: 30%;
+  margin: auto;
+  margin-top: -200px;
+  background: #12486b;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+ul {
+  display: inline-block;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+}
+.bg-2 h2,
+span {
+  color: #ececec;
+  font-size: 25px;
+}
+.bg-2 i {
+  font-size: 20px;
+  color: yellow;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 150px;
+}
+.fitur {
+  background: #419197;
+  height: 150px;
+  width: 60%;
+  margin: auto;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.fitur h2 {
+  color: #ececec;
+}
+.fitur i {
+  font-size: 50px;
+  color: #ececec;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1200px) {
+  .text-left a i,
+  .text-right a i {
+    font-size: 35px;
+  }
+  .bg-1 {
+    width: 50%;
+  }
+  .bg-2 {
+    width: 25%;
+    margin-top: -200px;
+  }
+  .bg-2 ul li a h2 {
+    font-size: 23px;
+  }
+  .bg-1 i {
+    font-size: 70px;
+    margin-left: 40px;
+  }
+  main {
+    margin-top: 100px;
+  }
+  .fitur ul li a h2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar {
+    height: 250px;
+    margin-bottom: -100px;
+  }
+  .bg-1 {
+    height: 200px;
+    width: 70%;
+  }
+  .bg-2 {
+    height: 150px;
+    width: 40%;
+    margin-top: -175px;
+  }
+  .fitur ul li a h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .text-left a i,
+  .text-right a i {
+    font-size: 30px;
+  }
+  .text-left a h2,
+  .text-right a h2 {
+    font-size: 23px;
+  }
+  .bg-1 i {
+    margin-left: 20px;
+    font-size: 60px;
+  }
+  main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .fitur {
+    margin-bottom: 40px;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar {
+    height: 200px;
+    margin-bottom: -80px;
+  }
+  .text-left a img {
+    width: 80px;
+  }
+  .text-right a h2 {
+    display: none;
+  }
+  .text-right a i {
+    font-size: 35px;
+  }
+  .bg-1 {
+    height: 150px;
+    width: 80%;
+  }
+  .bg-1 i {
+    display: none;
+  }
+  .bg-2 {
+    height: 100px;
+    width: 50%;
+    margin-top: -125px;
+  }
+  .bg-2 ul li a h2,
+  span {
+    font-size: 18px;
+  }
+  .bg-2 i {
+    font-size: 18px;
+  }
+  .fitur {
+    margin-bottom: 30px;
+    width: 60%;
+  }
+  .fitur ul li a h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .text-left,
+  .text-right {
+    padding-left: 10px;
+  }
+}

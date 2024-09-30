@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jemput Sampah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/jemput_sampah.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form>
+            <div class="m-5">
+                <h3>Alamat Lengkap</h3>
+                <input type="text" class="form-control" id="address" required/>
+            </div>
+        </form>
+        <div class="content">
+            <h3>Jenis Sampah</h3>
+
+            <div class="group">
+                <input type="checkbox" id="Organik" />
+                <label for="Organik">Sampah Organik</label>
+            </div>
+
+            <div class="group">
+                <input type="checkbox" id="Anorganik" />
+                <label for="Anorganik">Sampah Anorganik</label>
+            </div>
+
+            <div class="group">
+                <input type="checkbox" id="B3" />
+                <label for="B3">Sampah B3</label>
+            </div>
+
+            <div class="end">
+                <h3>Total Berat Sampah (Kg)</h3>
+                <div class="wrapper">
+                    <span class="minus">-</span>
+                    <span class="num">01</span>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+            <button id="jemputButton">Jemput Sekarang</button>
+        </div>
+        <!-- JS -->
+        <script src="../../backend/client/javascript/jemput_sampah.js"></script>
+</body>
+
+</html>

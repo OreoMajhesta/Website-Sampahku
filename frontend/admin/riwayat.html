@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riwayat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/riwayat.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">SampahKU</span>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <i class="bx bx-menu menu-icon"></i>
+                <span class="logo-name">SampahKU</span>
+            </div>
+
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="admin.html" class="nav-link">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="data.html" class="nav-link">
+                            <i class="bx bxs-user-account icon"></i>
+                            <span class="link">Data User</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="harga.html" class="nav-link">
+                            <i class="bx bxs-dollar-circle icon"></i>
+                            <span class="link">Harga Sampah</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="riwayat.html" class="nav-link">
+                            <i class="bx bx-history icon"></i>
+                            <span class="link">Riwayat</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="bottom-cotent">
+                    <li class="list">
+                        <a href="#" onclick="logout()" class="nav-link">
+                            <i class="bx bx-log-out icon"></i>
+                            <span class="link">Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="overlay"></section>
+
+    <div class="container">
+        <div class="head mt-5">
+            <h1>Riwayat</h1>
+        </div>
+        <div class="text-center tiga">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1>Status</h1>
+                </div>
+                <div class="col">
+                    <h1>Tanggal</h1>
+                </div>
+                <div class="col">
+                    <h1>Alamat</h1>
+                </div>
+                <div class="col">
+                    <h1>Saldo</h1>
+                </div>
+                <div class="col">
+                    <h1>Detail</h1>
+                </div>
+            </div>
+        </div>
+        <div id="history-data"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="../../backend/admin/javascript/riwayat.js"></script>
+</body>
+
+</html>

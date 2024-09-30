@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harga Sampah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/harga.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <i class="bx bx-menu menu-icon"></i>
+            <span class="logo-name">SampahKU</span>
+        </div>
+        <div class="sidebar">
+            <div class="logo">
+                <i class="bx bx-menu menu-icon"></i>
+                <span class="logo-name">SampahKU</span>
+            </div>
+
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="admin.html" class="nav-link">
+                            <i class="bx bx-home-alt icon"></i>
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="data.html" class="nav-link">
+                            <i class="bx bxs-user-account icon"></i>
+                            <span class="link">Data User</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="harga.html" class="nav-link">
+                            <i class="bx bxs-dollar-circle icon"></i>
+                            <span class="link">Harga Sampah</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="riwayat.html" class="nav-link">
+                            <i class="bx bx-history icon"></i>
+                            <span class="link">Riwayat</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="bottom-cotent">
+                    <li class="list">
+                        <a href="#" onclick="logout()" class="nav-link">
+                            <i class="bx bx-log-out icon"></i>
+                            <span class="link">Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="overlay"></section>
+
+    <main class="container">
+        <h3>Harga Sampah</h3>
+        <div class="isi">
+            <h1>Elektronik</h1>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Handphone</td>
+                        <td>:</td>
+                        <td><span class="Handphone">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Monitor</td>
+                        <td>:</td>
+                        <td><span class="Monitor">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Kulkas</td>
+                        <td>:</td>
+                        <td><span class="Kulkas">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Televisi</td>
+                        <td>:</td>
+                        <td><span class="Televisi">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Baterai Aki</td>
+                        <td>:</td>
+                        <td><span class="BateraiAki">Rp.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Plastik</h1>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Botol Mineral</td>
+                        <td>:</td>
+                        <td><span class="BotolMineral">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Jerigen</td>
+                        <td>:</td>
+                        <td><span class="Jerigen">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Plastik Campur</td>
+                        <td>:</td>
+                        <td><span class="PlastikCampur">Rp.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Kertas</h1>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Kardus</td>
+                        <td>:</td>
+                        <td><span class="Kardus">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Kertas Arsip</td>
+                        <td>:</td>
+                        <td><span class="KertasArsip">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Duplex</td>
+                        <td>:</td>
+                        <td><span class="Duplex">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Kertas Buram</td>
+                        <td>:</td>
+                        <td><span class="KertasBuram">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Sak Semen</td>
+                        <td>:</td>
+                        <td><span class="SakSemen">Rp.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Logam</h1>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Kaleng Aluminium</td>
+                        <td>:</td>
+                        <td><span class="KalengAluminium">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Besi</td>
+                        <td>:</td>
+                        <td><span class="Besi">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Baja</td>
+                        <td>:</td>
+                        <td><span class="Baja">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tembaga</td>
+                        <td>:</td>
+                        <td><span class="Tembaga">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Aluminium</td>
+                        <td>:</td>
+                        <td><span class="Aluminium">Rp.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Kaca</h1>
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td>Botol Sirup</td>
+                        <td>:</td>
+                        <td><span class="BotolSirup">Rp.</span></td>
+                    </tr>
+                    <tr>
+                        <td>Botol Campur</td>
+                        <td>:</td>
+                        <td><span class="BotolCampur">Rp.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button>Update</button>
+    </main>
+    <!-- JS -->
+    <script src="../../backend/admin/javascript/ambil_harga.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

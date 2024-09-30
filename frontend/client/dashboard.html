@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>SampahKU</title>
+</head>
+
+<body>
+    <!-- Nav -->
+    <div class="container">
+        <nav class="navbar">
+            <div class="text-left">
+                <a href="#"><img src="img/logo.png"></a>
+                <h2><span id="username"></span><h2>
+            </div>
+            <div class="text-right">
+                <a href="#" onclick="logout()"><i class="bx bx-log-out"></i></a>
+                <a href="#" onclick="logout()">
+                    <h2>Log Out</h2>
+                </a>
+            </div>
+        </nav>
+        <!-- Profil -->
+        <div class="profil">
+            <div class="bg-1">
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <div class="bg-2">
+                <ul>
+                    <li>
+                        <a href="">
+                            <h2>Saldo Pengguna</h2>
+                        </a>
+                        <a href=""><i class="bx bxs-coin-stack"></i><span id="saldo"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Fitur -->
+        <main>
+            <div class="fitur">
+                <ul>
+                    <li>
+                        <a href="jual_p1.html">
+                            <h2>Jual Sampah</h2>
+                        </a>
+                        <a href="jual_p1.html">
+                            <i class="bx bxs-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fitur">
+                <ul>
+                    <li>
+                        <a href="jemput_sampah.html">
+                            <h2>Jemput Sampah</h2>
+                        </a>
+                        <a href="jemput_sampah.html">
+                            <i class="bx bxs-truck"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fitur">
+                <ul>
+                    <li>
+                        <a href="history.html">
+                            <h2>Riwayat</h2>
+                        </a>
+                        <a href="history.html">
+                            <i class="bx bx-history"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="../../backend/client/javascript/dashboard.js"></script>
+
+</html>

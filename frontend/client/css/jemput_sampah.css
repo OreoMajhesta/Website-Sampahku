@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ece3ce;
+}
+.content {
+  margin-top: -75px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.group {
+  padding: 8px 48px;
+  margin: 8px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  position: relative;
+  font-size: 17px;
+}
+label::before {
+  content: "";
+  background: url("../img/check-circle.svg");
+  background-position: center;
+  background-size: contain;
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  left: -44px;
+  top: -8px;
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+input[type="checkbox"]:checked + label::before {
+  transform: scale(1) rotateZ(0deg);
+}
+label::after {
+  content: "";
+  border: 2px solid #005b41;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -42px;
+  top: -6px;
+  border-radius: 50%;
+}
+.end {
+  margin-top: 25px;
+}
+.wrapper {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.wrapper span {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+.wrapper span.num {
+  font-size: 25px;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+button {
+  margin-top: 40px;
+  width: 14em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #008170 0%, #232d3f 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+button:hover::before {
+  width: 15em;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 200px;
+  }
+  .wrapper span {
+    font-size: 20px;
+  }
+  .wrapper span.num {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    width: 175px;
+  }
+}
